@@ -19,7 +19,6 @@ def save_binary_to_file(binary_string, output_path):
     except Exception as e:
         print(f"Une erreur s'est produite lors de la sauvegarde : {str(e)}")
 
-# Exemple d'utilisation
 binary_representation = file_to_binary(file_path)
 if "Le fichier spécifié est introuvable" not in binary_representation and "Une erreur s'est produite" not in binary_representation:
     output_path = input("Chemin pour sauvegarder le fichier binaire (ex. 'output.txt') : ")
